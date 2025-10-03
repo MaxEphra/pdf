@@ -283,7 +283,7 @@
             box-shadow: var(--shadow);
         }
 
-        /* Services Section - Dropdown Horizontal */
+        /* Services Section - Modificada para mostrar por extenso */
         .services {
             background: var(--gradient-secondary);
             color: var(--text-light);
@@ -292,7 +292,7 @@
         .services-container {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 2rem;
         }
 
         .service-item {
@@ -306,15 +306,7 @@
 
         .service-header {
             padding: 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .service-header:hover {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(0, 0, 0, 0.1);
         }
 
         .service-title {
@@ -328,29 +320,8 @@
             color: var(--accent-color);
         }
 
-        .service-arrow {
-            font-size: 1.2rem;
-            transition: var(--transition);
-        }
-
-        .service-arrow.active {
-            transform: rotate(180deg);
-        }
-
-        .service-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            background: rgba(0, 0, 0, 0.1);
-        }
-
-        .service-content.active {
-            max-height: 1000px;
-        }
-
         .service-body {
             padding: 1.5rem;
-            padding-top: 0;
         }
 
         .service-body ul {
@@ -715,7 +686,7 @@
         </div>
     </section>
 
-    <!-- Services Section - Dropdown Horizontal -->
+    <!-- Services Section - Agora por extenso -->
     <section id="services" class="services section">
         <div class="container">
             <h2 class="section-title lang-pt">Nossos Serviços</h2>
@@ -732,36 +703,33 @@
                                 <p class="lang-en">Multi-currency digital bank with smart solutions for global finances and asset protection.</p>
                             </div>
                         </div>
-                        <div class="service-arrow"><i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <div class="service-content">
-                        <div class="service-body">
-                            <p class="lang-pt">O Bank é a divisão de serviços bancários digitais da HOLDING LLC, com foco em inovação e integração entre moedas tradicionais e ativos digitais. Criamos soluções financeiras inteligentes para indivíduos e empresas.</p>
-                            <p class="lang-en">TEJ Bank is the digital banking services division of TEJ HOLDING, focusing on innovation and integration between traditional currencies and digital assets. We create smart financial solutions for individuals and businesses.</p>
-                            <br>
-                            <ul>
-                                <h4 class="lang-pt">Produtos e Serviços</h4>
-                                <h4 class="lang-en">Products and Services</h4>
-                                <li class="lang-pt">Conta Digital Multimoeda (base USDT)</li>
-                                <li class="lang-en">Multi-currency Digital Account (USDT-based)</li>
-                                <li class="lang-pt">Cartão Global (Físico & Virtual)</li>
-                                <li class="lang-en">Global Card (Physical & Virtual)</li>
-                                <li class="lang-pt">Blindagem Patrimonial Inteligente</li>
-                                <li class="lang-en">Smart Asset Protection</li>
-                                <li class="lang-pt">Expansão Patrimonial Estratégica</li>
-                                <li class="lang-en">Strategic Wealth Expansion</li>
-                                <li class="lang-pt">Crédito Colateralizado em Criptoativos</li>
-                                <li class="lang-en">Crypto-backed Credit</li>
-                                <li class="lang-pt">Remessas Globais via Blockchain</li>
-                                <li class="lang-en">Global Remittances via Blockchain</li>
-                                <li class="lang-pt">Assistente Financeiro com IA</li>
-                                <li class="lang-en">AI Financial Assistant</li>
-                                <h4 class="lang-pt">Tecnologia e Segurança</h4>
-                                <h4 class="lang-en">Technology and Security</h4>
-                                <li class="lang-pt">Utilizamos blockchain e protocolos de segurança avançados, garantindo máxima proteção dos ativos e dados de nossos clientes. Transparência, inovação e solidez em um único ecossistema bancário.</li>
-                                <li class="lang-en">We use blockchain and advanced security protocols, ensuring maximum protection of our clients' assets and data. Transparency, innovation, and solidity in a single banking ecosystem.</li>
-                            </ul>
-                        </div>
+                    <div class="service-body">
+                        <p class="lang-pt">O Bank é a divisão de serviços bancários digitais da HOLDING LLC, com foco em inovação e integração entre moedas tradicionais e ativos digitais. Criamos soluções financeiras inteligentes para indivíduos e empresas.</p>
+                        <p class="lang-en">TEJ Bank is the digital banking services division of TEJ HOLDING, focusing on innovation and integration between traditional currencies and digital assets. We create smart financial solutions for individuals and businesses.</p>
+                        <br>
+                        <ul>
+                            <h4 class="lang-pt">Produtos e Serviços</h4>
+                            <h4 class="lang-en">Products and Services</h4>
+                            <li class="lang-pt">Conta Digital Multimoeda (base USDT)</li>
+                            <li class="lang-en">Multi-currency Digital Account (USDT-based)</li>
+                            <li class="lang-pt">Cartão Global (Físico & Virtual)</li>
+                            <li class="lang-en">Global Card (Physical & Virtual)</li>
+                            <li class="lang-pt">Blindagem Patrimonial Inteligente</li>
+                            <li class="lang-en">Smart Asset Protection</li>
+                            <li class="lang-pt">Expansão Patrimonial Estratégica</li>
+                            <li class="lang-en">Strategic Wealth Expansion</li>
+                            <li class="lang-pt">Crédito Colateralizado em Criptoativos</li>
+                            <li class="lang-en">Crypto-backed Credit</li>
+                            <li class="lang-pt">Remessas Globais via Blockchain</li>
+                            <li class="lang-en">Global Remittances via Blockchain</li>
+                            <li class="lang-pt">Assistente Financeiro com IA</li>
+                            <li class="lang-en">AI Financial Assistant</li>
+                            <h4 class="lang-pt">Tecnologia e Segurança</h4>
+                            <h4 class="lang-en">Technology and Security</h4>
+                            <li class="lang-pt">Utilizamos blockchain e protocolos de segurança avançados, garantindo máxima proteção dos ativos e dados de nossos clientes. Transparência, inovação e solidez em um único ecossistema bancário.</li>
+                            <li class="lang-en">We use blockchain and advanced security protocols, ensuring maximum protection of our clients' assets and data. Transparency, innovation, and solidity in a single banking ecosystem.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -776,34 +744,31 @@
                                 <p class="lang-en">Digital payment solutions</p>
                             </div>
                         </div>
-                        <div class="service-arrow"><i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <div class="service-content">
-                        <div class="service-body">
-                            <p class="lang-pt"><b>PAGUE</b> é o serviço que conecta brasileiros nos Estados Unidos ao pagamento de contas no Brasil de forma rápida e segura.</p>
-                            <p class="lang-en">TEJ Pague is the service that connects Brazilians in the United States to paying bills in Brazil quickly and securely.</p>
-                            <ul>
-                                <h4 class="lang-pt">Como Funciona</h4>
-                                <h4 class="lang-en">How It Works</h4>
-                                <br>
-                                <li class="lang-pt">Envie os valores em dólar para a <b>PAGUE</b> via Bank of American ou em Criptomoeda</li>
-                                <li class="lang-en">Send amounts in dollars to TEJ Pague via Bank of America or in Cryptocurrency</li>
-                                <li class="lang-pt">Realizamos a conversão para reais com câmbio seguro</li>
-                                <li class="lang-en">We convert to reais with secure exchange rates</li>
-                                <li class="lang-pt">Realizamos o pagamento de contas como água, luz, internet, boletos, faturas e muito mais.</li>
-                                <li class="lang-en">We pay bills such as water, electricity, internet, invoices, and much more.</li>
-                                <li class="lang-pt">Pagamos suas contas no Brasil de forma ágil e transparente</li>
-                                <li class="lang-en">We pay your bills in Brazil quickly and transparently</li>
-                                <li class="lang-pt">Enviamos (PIX) para seus amigos e familiares no Brasil em minutos</li>
-                                <li class="lang-en">We send (PIX) to your friends and family in Brazil in minutes</li>
-                                <h4 class="lang-pt">Diferencial</h4>
-                                <h4 class="lang-en">Advantage</h4>
-                                <li class="lang-pt">Com o <b>PAGUE</b> você tem praticidade, confiança e suporte especializado.</li>
-                                <li class="lang-en">With TEJ Pague you get convenience, trust, and specialized support.</li>
-                                <li class="lang-pt">Sua família no Brasil fica tranquila e você resolve tudo diretamente dos EUA.</li>
-                                <li class="lang-en">Your family in Brazil stays calm and you handle everything directly from the US.</li>
-                            </ul>
-                        </div>
+                    <div class="service-body">
+                        <p class="lang-pt"><b>PAGUE</b> é o serviço que conecta brasileiros nos Estados Unidos ao pagamento de contas no Brasil de forma rápida e segura.</p>
+                        <p class="lang-en">TEJ Pague is the service that connects Brazilians in the United States to paying bills in Brazil quickly and securely.</p>
+                        <ul>
+                            <h4 class="lang-pt">Como Funciona</h4>
+                            <h4 class="lang-en">How It Works</h4>
+                            <br>
+                            <li class="lang-pt">Envie os valores em dólar para a <b>PAGUE</b> via Bank of American ou em Criptomoeda</li>
+                            <li class="lang-en">Send amounts in dollars to TEJ Pague via Bank of America or in Cryptocurrency</li>
+                            <li class="lang-pt">Realizamos a conversão para reais com câmbio seguro</li>
+                            <li class="lang-en">We convert to reais with secure exchange rates</li>
+                            <li class="lang-pt">Realizamos o pagamento de contas como água, luz, internet, boletos, faturas e muito mais.</li>
+                            <li class="lang-en">We pay bills such as water, electricity, internet, invoices, and much more.</li>
+                            <li class="lang-pt">Pagamos suas contas no Brasil de forma ágil e transparente</li>
+                            <li class="lang-en">We pay your bills in Brazil quickly and transparently</li>
+                            <li class="lang-pt">Enviamos (PIX) para seus amigos e familiares no Brasil em minutos</li>
+                            <li class="lang-en">We send (PIX) to your friends and family in Brazil in minutes</li>
+                            <h4 class="lang-pt">Diferencial</h4>
+                            <h4 class="lang-en">Advantage</h4>
+                            <li class="lang-pt">Com o <b>PAGUE</b> você tem praticidade, confiança e suporte especializado.</li>
+                            <li class="lang-en">With TEJ Pague you get convenience, trust, and specialized support.</li>
+                            <li class="lang-pt">Sua família no Brasil fica tranquila e você resolve tudo diretamente dos EUA.</li>
+                            <li class="lang-en">Your family in Brazil stays calm and you handle everything directly from the US.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -818,47 +783,44 @@
                                 <p class="lang-en">Wealth management and investments</p>
                             </div>
                         </div>
-                        <div class="service-arrow"><i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <div class="service-content">
-                        <div class="service-body">
-                            <h4 class="lang-pt">Empresa especializada em gestão de patrimônio e consultoria financeira personalizada.</h4>
-                            <h4 class="lang-en">Company specialized in wealth management and personalized financial consulting.</h4>
-                            <ul>
-                                <li class="lang-pt">Consultoria tributária internacional</li>
-                                <li class="lang-en">International tax consulting</li>
-                                <li class="lang-pt">Estruturação de holdings no Brasil e EUA</li>
-                                <li class="lang-en">Structuring of holdings in Brazil and USA</li>
-                                <li class="lang-pt">Auditoria contábil e fiscal</li>
-                                <li class="lang-en">Accounting and tax auditing</li>
-                                <li class="lang-pt">Planejamento sucessório e empresarial</li>
-                                <li class="lang-en">Succession and business planning</li>
-                                <li class="lang-pt">Integração bancária Brasil ↔ EUA (PIX/SPB com TEJ Bank)</li>
-                                <li class="lang-en">Bank integration Brazil ↔ USA (PIX/SPB with TEJ Bank)</li>
-                                <h4 class="lang-pt">Contabilidade Empresarial Detalhada:</h4>
-                                <h4 class="lang-en">Detailed Business Accounting:</h4>
-                                <li class="lang-pt">Escrituração fiscal e societária</li>
-                                <li class="lang-en">Tax and corporate bookkeeping</li>
-                                <li class="lang-pt">Balanços e demonstrações financeiras</li>
-                                <li class="lang-en">Balance sheets and financial statements</li>
-                                <li class="lang-pt">Consultoria para empresas exportadoras/importadoras</li>
-                                <li class="lang-en">Consulting for exporting/importing companies</li>
-                                <li class="lang-pt">Abertura de empresas</li>
-                                <li class="lang-en">Company formation</li>
-                                <li class="lang-pt">Suporte fiscal e contábil</li>
-                                <li class="lang-en">Tax and accounting support</li>
-                                <h4 class="lang-pt">Cartório / Notary Services (EUA)</h4>
-                                <h4 class="lang-en">Notary Services (USA)</h4>
-                                <li class="lang-pt">Notarização de documentos</li>
-                                <li class="lang-en">Document notarization</li>
-                                <li class="lang-pt">Traduções juramentadas</li>
-                                <li class="lang-en">Sworn translations</li>
-                                <li class="lang-pt">Procurações internacionais</li>
-                                <li class="lang-en">International powers of attorney</li>
-                                <li class="lang-pt">Registro e autenticação para uso no Brasil/EUA</li>
-                                <li class="lang-en">Registration and authentication for use in Brazil/USA</li>
-                            </ul>
-                        </div>
+                    <div class="service-body">
+                        <h4 class="lang-pt">Empresa especializada em gestão de patrimônio e consultoria financeira personalizada.</h4>
+                        <h4 class="lang-en">Company specialized in wealth management and personalized financial consulting.</h4>
+                        <ul>
+                            <li class="lang-pt">Consultoria tributária internacional</li>
+                            <li class="lang-en">International tax consulting</li>
+                            <li class="lang-pt">Estruturação de holdings no Brasil e EUA</li>
+                            <li class="lang-en">Structuring of holdings in Brazil and USA</li>
+                            <li class="lang-pt">Auditoria contábil e fiscal</li>
+                            <li class="lang-en">Accounting and tax auditing</li>
+                            <li class="lang-pt">Planejamento sucessório e empresarial</li>
+                            <li class="lang-en">Succession and business planning</li>
+                            <li class="lang-pt">Integração bancária Brasil ↔ EUA (PIX/SPB com TEJ Bank)</li>
+                            <li class="lang-en">Bank integration Brazil ↔ USA (PIX/SPB with TEJ Bank)</li>
+                            <h4 class="lang-pt">Contabilidade Empresarial Detalhada:</h4>
+                            <h4 class="lang-en">Detailed Business Accounting:</h4>
+                            <li class="lang-pt">Escrituração fiscal e societária</li>
+                            <li class="lang-en">Tax and corporate bookkeeping</li>
+                            <li class="lang-pt">Balanços e demonstrações financeiras</li>
+                            <li class="lang-en">Balance sheets and financial statements</li>
+                            <li class="lang-pt">Consultoria para empresas exportadoras/importadoras</li>
+                            <li class="lang-en">Consulting for exporting/importing companies</li>
+                            <li class="lang-pt">Abertura de empresas</li>
+                            <li class="lang-en">Company formation</li>
+                            <li class="lang-pt">Suporte fiscal e contábil</li>
+                            <li class="lang-en">Tax and accounting support</li>
+                            <h4 class="lang-pt">Cartório / Notary Services (EUA)</h4>
+                            <h4 class="lang-en">Notary Services (USA)</h4>
+                            <li class="lang-pt">Notarização de documentos</li>
+                            <li class="lang-en">Document notarization</li>
+                            <li class="lang-pt">Traduções juramentadas</li>
+                            <li class="lang-en">Sworn translations</li>
+                            <li class="lang-pt">Procurações internacionais</li>
+                            <li class="lang-en">International powers of attorney</li>
+                            <li class="lang-pt">Registro e autenticação para uso no Brasil/EUA</li>
+                            <li class="lang-en">Registration and authentication for use in Brazil/USA</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -873,82 +835,79 @@
                                 <p class="lang-en">Immigrant solutions hub</p>
                             </div>
                         </div>
-                        <div class="service-arrow"><i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <div class="service-content">
-                        <div class="service-body">
-                            <h4 class="lang-pt">Soluções especializadas para imigrantes e suas famílias.</h4>
-                            <h4 class="lang-en">Specialized solutions for immigrants and their families.</h4>
-                
-                            <h4 class="lang-pt">Serviços de Imigração e Documentação:</h4>
-                            <h4 class="lang-en">Immigration and Documentation Services:</h4>
-                            <ul>
-                                <li class="lang-pt">Petições USCIS (I-130, I-485, I-765, I-589, I-131, I-539, I-360, etc.)</li>
-                                <li class="lang-en">USCIS Petitions (I-130, I-485, I-765, I-589, I-131, I-539, I-360, etc.)</li>
-                                <li class="lang-pt">Asilo, VAWA, Visto T, Visto U, Parole Humanitário</li>
-                                <li class="lang-en">Asylum, VAWA, T Visa, U Visa, Humanitarian Parole</li>
-                                <li class="lang-pt">Ajuste e mudança de status (B-1/B-2, F-1, J-1, Green Card, cidadania)</li>
-                                <li class="lang-en">Adjustment and change of status (B-1/B-2, F-1, J-1, Green Card, citizenship)</li>
-                                <li class="lang-pt">Defesa contra deportação</li>
-                                <li class="lang-en">Defense against deportation</li>
-                            </ul>
-                
-                            <h4 class="lang-pt">Serviços Práticos e Comunitários:</h4>
-                            <h4 class="lang-en">Practical and Community Services:</h4>
-                            <ul>
-                                <li class="lang-pt">Carteira de motorista</li>
-                                <li class="lang-en">Driver's license</li>
-                                <li class="lang-pt">Matrícula escolar</li>
-                                <li class="lang-en">School enrollment</li>
-                                <li class="lang-pt">Agendamento de consultas médicas</li>
-                                <li class="lang-en">Medical appointment scheduling</li>
-                                <li class="lang-pt">Concierge de adaptação</li>
-                                <li class="lang-en">Adaptation concierge</li>
-                                <li class="lang-pt">Agência de turismo</li>
-                                <li class="lang-en">Travel agency</li>
-                            </ul>
-                
-                            <h4 class="lang-pt">Contabilidade e Apoio Empresarial:</h4>
-                            <h4 class="lang-en">Accounting and Business Support:</h4>
-                            <ul>
-                                <li class="lang-pt">Declaração de impostos (pessoa física e jurídica)</li>
-                                <li class="lang-en">Tax declaration (individual and corporate)</li>
-                                <li class="lang-pt">Payroll (folha de pagamento)</li>
-                                <li class="lang-en">Payroll</li>
-                                <li class="lang-pt">Planejamento tributário</li>
-                                <li class="lang-en">Tax planning</li>
-                                <li class="lang-pt">Regularização fiscal junto ao IRS</li>
-                                <li class="lang-en">Tax regularization with the IRS</li>
-                                <li class="lang-pt">Relatórios contábeis e financeiros mensais</li>
-                                <li class="lang-en">Monthly accounting and financial reports</li>
-                                <li class="lang-pt">Abertura de empresas</li>
-                                <li class="lang-en">Company formation</li>
-                                <li class="lang-pt">Suporte fiscal e contábil</li>
-                                <li class="lang-en">Tax and accounting support</li>
-                            </ul>
-                
-                            <h4 class="lang-pt">Integração Comunitária:</h4>
-                            <h4 class="lang-en">Community Integration:</h4>
-                            <ul>
-                                <li class="lang-pt">Espaço gratuito no portal para empresas, igrejas e instituições (Google do Imigrante)</li>
-                                <li class="lang-en">Free space on the portal for businesses, churches, and institutions (Immigrant's Google)</li>
-                            </ul>
-                
-                            <h4 class="lang-pt">Serviços Financeiros:</h4>
-                            <h4 class="lang-en">Financial Services:</h4>
-                            <ul>
-                                <li class="lang-pt">Remessas internacionais</li>
-                                <li class="lang-en">International remittances</li>
-                                <li class="lang-pt">Abertura de contas para estrangeiros</li>
-                                <li class="lang-en">Account opening for foreigners</li>
-                                <li class="lang-pt">Câmbio e transferências</li>
-                                <li class="lang-en">Exchange and transfers</li>
-                                <li class="lang-pt">Suporte multilíngue</li>
-                                <li class="lang-en">Multilingual support</li>
-                                <li class="lang-pt">Orientação financeira para imigrantes</li>
-                                <li class="lang-en">Financial guidance for immigrants</li>
-                            </ul>
-                        </div>
+                    <div class="service-body">
+                        <h4 class="lang-pt">Soluções especializadas para imigrantes e suas famílias.</h4>
+                        <h4 class="lang-en">Specialized solutions for immigrants and their families.</h4>
+            
+                        <h4 class="lang-pt">Serviços de Imigração e Documentação:</h4>
+                        <h4 class="lang-en">Immigration and Documentation Services:</h4>
+                        <ul>
+                            <li class="lang-pt">Petições USCIS (I-130, I-485, I-765, I-589, I-131, I-539, I-360, etc.)</li>
+                            <li class="lang-en">USCIS Petitions (I-130, I-485, I-765, I-589, I-131, I-539, I-360, etc.)</li>
+                            <li class="lang-pt">Asilo, VAWA, Visto T, Visto U, Parole Humanitário</li>
+                            <li class="lang-en">Asylum, VAWA, T Visa, U Visa, Humanitarian Parole</li>
+                            <li class="lang-pt">Ajuste e mudança de status (B-1/B-2, F-1, J-1, Green Card, cidadania)</li>
+                            <li class="lang-en">Adjustment and change of status (B-1/B-2, F-1, J-1, Green Card, citizenship)</li>
+                            <li class="lang-pt">Defesa contra deportação</li>
+                            <li class="lang-en">Defense against deportation</li>
+                        </ul>
+            
+                        <h4 class="lang-pt">Serviços Práticos e Comunitários:</h4>
+                        <h4 class="lang-en">Practical and Community Services:</h4>
+                        <ul>
+                            <li class="lang-pt">Carteira de motorista</li>
+                            <li class="lang-en">Driver's license</li>
+                            <li class="lang-pt">Matrícula escolar</li>
+                            <li class="lang-en">School enrollment</li>
+                            <li class="lang-pt">Agendamento de consultas médicas</li>
+                            <li class="lang-en">Medical appointment scheduling</li>
+                            <li class="lang-pt">Concierge de adaptação</li>
+                            <li class="lang-en">Adaptation concierge</li>
+                            <li class="lang-pt">Agência de turismo</li>
+                            <li class="lang-en">Travel agency</li>
+                        </ul>
+            
+                        <h4 class="lang-pt">Contabilidade e Apoio Empresarial:</h4>
+                        <h4 class="lang-en">Accounting and Business Support:</h4>
+                        <ul>
+                            <li class="lang-pt">Declaração de impostos (pessoa física e jurídica)</li>
+                            <li class="lang-en">Tax declaration (individual and corporate)</li>
+                            <li class="lang-pt">Payroll (folha de pagamento)</li>
+                            <li class="lang-en">Payroll</li>
+                            <li class="lang-pt">Planejamento tributário</li>
+                            <li class="lang-en">Tax planning</li>
+                            <li class="lang-pt">Regularização fiscal junto ao IRS</li>
+                            <li class="lang-en">Tax regularization with the IRS</li>
+                            <li class="lang-pt">Relatórios contábeis e financeiros mensais</li>
+                            <li class="lang-en">Monthly accounting and financial reports</li>
+                            <li class="lang-pt">Abertura de empresas</li>
+                            <li class="lang-en">Company formation</li>
+                            <li class="lang-pt">Suporte fiscal e contábil</li>
+                            <li class="lang-en">Tax and accounting support</li>
+                        </ul>
+            
+                        <h4 class="lang-pt">Integração Comunitária:</h4>
+                        <h4 class="lang-en">Community Integration:</h4>
+                        <ul>
+                            <li class="lang-pt">Espaço gratuito no portal para empresas, igrejas e instituições (Google do Imigrante)</li>
+                            <li class="lang-en">Free space on the portal for businesses, churches, and institutions (Immigrant's Google)</li>
+                        </ul>
+            
+                        <h4 class="lang-pt">Serviços Financeiros:</h4>
+                        <h4 class="lang-en">Financial Services:</h4>
+                        <ul>
+                            <li class="lang-pt">Remessas internacionais</li>
+                            <li class="lang-en">International remittances</li>
+                            <li class="lang-pt">Abertura de contas para estrangeiros</li>
+                            <li class="lang-en">Account opening for foreigners</li>
+                            <li class="lang-pt">Câmbio e transferências</li>
+                            <li class="lang-en">Exchange and transfers</li>
+                            <li class="lang-pt">Suporte multilíngue</li>
+                            <li class="lang-en">Multilingual support</li>
+                            <li class="lang-pt">Orientação financeira para imigrantes</li>
+                            <li class="lang-en">Financial guidance for immigrants</li>
+                        </ul>
                     </div>
                 </div>                
             </div>
@@ -1512,34 +1471,6 @@
                 });
             });
 
-            // Funcionalidade do dropdown dos serviços
-            const serviceHeaders = document.querySelectorAll('.service-header');
-            
-            serviceHeaders.forEach(header => {
-                header.addEventListener('click', function() {
-                    const content = this.nextElementSibling;
-                    const arrow = this.querySelector('.service-arrow');
-                    
-                    // Fecha todos os outros conteúdos
-                    document.querySelectorAll('.service-content').forEach(item => {
-                        if (item !== content) {
-                            item.classList.remove('active');
-                        }
-                    });
-                    
-                    // Reseta todas as outras setas
-                    document.querySelectorAll('.service-arrow').forEach(item => {
-                        if (item !== arrow) {
-                            item.classList.remove('active');
-                        }
-                    });
-                    
-                    // Alterna o conteúdo atual
-                    content.classList.toggle('active');
-                    arrow.classList.toggle('active');
-                });
-            });
-
             // Alternador de idiomas - CORRIGIDO
             const languageFlags = document.querySelectorAll('.language-flag');
             
@@ -1565,4 +1496,5 @@
     </script>
 </body>
 </html>
+
 
